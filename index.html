@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Roboto+Mono&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
@@ -74,7 +73,7 @@
         },
       }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
             vertical-align: middle;
@@ -86,161 +85,132 @@
     </style>
 </head>
 <body class="bg-surface text-on-surface font-body antialiased">
-<!-- TopNavBar -->
+
 <nav class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-xl no-border bg-gradient-to-b from-slate-900/20 to-transparent shadow-2xl shadow-black/50 font-['Space_Grotesk'] antialiased">
-<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
-<div class="text-2xl font-bold tracking-tighter text-slate-50">
-                DigitalArchitect
-            </div>
-<div class="hidden md:flex items-center space-x-8">
-<a class="text-cyan-400 font-bold border-b-2 border-cyan-400 pb-1" href="#">Home</a>
-<a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-cyan-300 transition-all duration-300" href="#">Projects</a>
-<a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-cyan-300 transition-all duration-300" href="#">Skills</a>
-<a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-cyan-300 transition-all duration-300" href="#">Experience</a>
-<a class="text-slate-400 hover:text-slate-100 transition-colors hover:text-cyan-300 transition-all duration-300" href="#">Contact</a>
-</div>
-<button class="bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-5 py-2 rounded-md font-bold tracking-tight scale-95 active:scale-90 transition-all duration-300 hover:shadow-[0_0_20px_rgba(71,214,255,0.3)]">
-                Get in Touch
-            </button>
-</div>
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+        <div class="text-2xl font-bold tracking-tighter text-slate-50">
+            DigitalArchitect
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+            <a class="text-cyan-400 font-bold border-b-2 border-cyan-400 pb-1" href="index.html">Home</a>
+            <a class="text-slate-400 hover:text-cyan-300 transition-all duration-300" href="projects.html">Projects</a>
+            <a class="text-slate-400 hover:text-cyan-300 transition-all duration-300" href="skills.html">Skills</a>
+            <a class="text-slate-400 hover:text-cyan-300 transition-all duration-300" href="experience.html">Experience</a>
+            <a class="text-slate-400 hover:text-cyan-300 transition-all duration-300" href="contact.html">Contact</a>
+        </div>
+        <a href="contact.html" class="bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-5 py-2 rounded-md font-bold tracking-tight scale-95 active:scale-90 transition-all duration-300 hover:shadow-[0_0_20px_rgba(71,214,255,0.3)]">
+            Get in Touch
+        </a>
+    </div>
 </nav>
+
 <main>
-<!-- Hero Section -->
-<section class="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20">
-<!-- Background Decorative Elements -->
-<div class="absolute inset-0 z-0">
-<div class="absolute top-[-10%] right-[-10%] w-[60%] h-[60%] bg-primary/10 blur-[120px] rounded-full"></div>
-<div class="absolute bottom-[-10%] left-[-10%] w-[40%] h-[40%] bg-tertiary/5 blur-[100px] rounded-full"></div>
-</div>
-<div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
-<!-- Hero Content (Asymmetric Left) -->
-<div class="lg:col-span-7 py-12">
-<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-lowest border border-primary/10 rounded-full mb-8">
-<span class="w-2 h-2 bg-tertiary rounded-full animate-pulse"></span>
-<span class="text-xs font-mono uppercase tracking-[0.2em] text-on-surface-variant">Available for system architecture</span>
-</div>
-<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter leading-[1.1] mb-6">
-                        Engineering <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">Digital Resiliency</span> Through Code.
-                    </h1>
-<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed font-light">
-                        Senior IT Architect specializing in scalable cloud infrastructure and high-performance full-stack applications. I bridge the gap between complex technical requirements and elegant, maintainable solutions.
-                    </p>
-<div class="flex flex-wrap gap-4 items-center">
-<a class="group relative flex items-center gap-3 bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-8 py-4 rounded-md font-bold transition-all hover:translate-y-[-2px] overflow-hidden" href="https://github.com">
-<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
-<span>Explore Repository</span>
-<div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
-</a>
-<a class="flex items-center gap-2 text-primary border border-primary/20 hover:bg-primary/5 px-8 py-4 rounded-md font-bold transition-all" href="#projects">
-<span>View Case Studies</span>
-<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
-</a>
-</div>
-<!-- Meta Tags / Stats -->
-<div class="mt-16 grid grid-cols-3 gap-8 max-w-md">
-<div>
-<div class="text-xs font-mono text-tertiary uppercase tracking-widest mb-1">Experience</div>
-<div class="text-2xl font-headline font-bold">12+ Yrs</div>
-</div>
-<div>
-<div class="text-xs font-mono text-tertiary uppercase tracking-widest mb-1">Deployments</div>
-<div class="text-2xl font-headline font-bold">450+</div>
-</div>
-<div>
-<div class="text-xs font-mono text-tertiary uppercase tracking-widest mb-1">Uptime</div>
-<div class="text-2xl font-headline font-bold">99.9%</div>
-</div>
-</div>
-</div>
-<!-- Hero Imagery / Visual Focus (Asymmetric Right) -->
-<div class="lg:col-span-5 relative">
-<div class="relative aspect-square md:aspect-auto md:h-[600px] w-full bg-surface-container-low rounded-xl overflow-hidden shadow-2xl group">
-<img class="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700" data-alt="Modern high-contrast code snippet on a dark editor screen with vibrant syntax highlighting in blue and teal tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKcID1nfqQaDrXb9OXZAavOwmLNRpMRC7O4AHT2USNSf57GnZg7SrCA3B_CIijJ4FEvrC0vhpRvDKepP2np9KtPlF5XVEwvdjYE-A5YkzlA7mBUNqZEtniYeoyVWc25MXeXhNre5ze35b_N8AYv_2Be9EOmSAbYKgJ69f9lWOCEntKpHyUi13Z8bLJguNg9X1gVBY41KvBp9Dc4C11qu77CW2VCigajiA2iS6NNVymUv6UOAVPIdBMZFSyru1LpPePwsWBD61NUWQ"/>
-<!-- Overlay Card -->
-<div class="absolute bottom-6 left-6 right-6 glass-panel p-6 rounded-lg border border-white/5 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-<div class="flex items-center gap-4 mb-4">
-<div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary">
-<span class="material-symbols-outlined" data-icon="developer_board">developer_board</span>
-</div>
-<div>
-<div class="font-headline font-bold">Current Stack</div>
-<div class="text-xs font-mono text-primary">System Integrity: Optimal</div>
-</div>
-</div>
-<div class="flex flex-wrap gap-2">
-<span class="px-2 py-1 bg-surface-variant text-[10px] font-mono rounded">Kubernetes</span>
-<span class="px-2 py-1 bg-surface-variant text-[10px] font-mono rounded">TypeScript</span>
-<span class="px-2 py-1 bg-surface-variant text-[10px] font-mono rounded">Rust</span>
-<span class="px-2 py-1 bg-surface-variant text-[10px] font-mono rounded">AWS/GCP</span>
-</div>
-</div>
-</div>
-<!-- Decorative Floating Element -->
-<div class="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-tertiary to-transparent opacity-20 blur-3xl"></div>
-</div>
-</div>
-</section>
-<!-- Focus Areas Section (Bento Style) -->
-<section class="py-24 bg-surface-container-low">
-<div class="max-w-7xl mx-auto px-6">
-<div class="mb-16">
-<h2 class="font-headline text-3xl font-bold mb-4">Architectural Focus</h2>
-<div class="h-1 w-20 bg-primary"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Bento Box 1 -->
-<div class="md:col-span-2 p-8 bg-surface-container rounded-xl flex flex-col justify-between hover:bg-surface-container-high transition-colors">
-<div>
-<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="cloud_done">cloud_done</span>
-<h3 class="font-headline text-2xl font-bold mb-4">Cloud Native Infrastructure</h3>
-<p class="text-on-surface-variant leading-relaxed max-w-xl">Designing fault-tolerant microservices architectures using Kubernetes and Terraform. Specializing in automated CI/CD pipelines that ensure zero-downtime deployments.</p>
-</div>
-<div class="mt-8 pt-8 border-t border-white/5 flex gap-4">
-<span class="text-xs font-mono text-primary bg-primary/5 px-2 py-1">#infrastructure_as_code</span>
-<span class="text-xs font-mono text-primary bg-primary/5 px-2 py-1">#scalability</span>
-</div>
-</div>
-<!-- Bento Box 2 -->
-<div class="p-8 bg-surface-container rounded-xl hover:bg-surface-container-high transition-colors border-t-2 border-primary/20">
-<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="security">security</span>
-<h3 class="font-headline text-2xl font-bold mb-4">SecOps</h3>
-<p class="text-on-surface-variant leading-relaxed">Implementing end-to-end security protocols, encryption at rest, and identity management systems for enterprise-grade applications.</p>
-</div>
-<!-- Bento Box 3 -->
-<div class="p-8 bg-surface-container rounded-xl hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="api">api</span>
-<h3 class="font-headline text-2xl font-bold mb-4">API Design</h3>
-<p class="text-on-surface-variant leading-relaxed">Building robust, developer-first APIs using GraphQL and gRPC for seamless cross-service communication.</p>
-</div>
-<!-- Bento Box 4 -->
-<div class="md:col-span-2 p-8 bg-surface-container rounded-xl flex items-center gap-8 hover:bg-surface-container-high transition-colors">
-<div class="hidden sm:block w-32 h-32 bg-surface-container-lowest rounded-lg flex-shrink-0 flex items-center justify-center">
-<span class="material-symbols-outlined text-tertiary text-5xl" data-icon="monitoring">monitoring</span>
-</div>
-<div>
-<h3 class="font-headline text-2xl font-bold mb-2">Observability &amp; Performance</h3>
-<p class="text-on-surface-variant">Real-time monitoring using Prometheus and Grafana. Latency reduction is not just a goal; it's a requirement for every project I touch.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+    <section class="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-[-10%] right-[-10%] w-[60%] h-[60%] bg-primary/10 blur-[120px] rounded-full"></div>
+            <div class="absolute bottom-[-10%] left-[-10%] w-[40%] h-[40%] bg-tertiary/5 blur-[100px] rounded-full"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-7 py-12">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-lowest border border-primary/10 rounded-full mb-8">
+                    <span class="w-2 h-2 bg-tertiary rounded-full animate-pulse"></span>
+                    <span class="text-xs font-mono uppercase tracking-[0.2em] text-on-surface-variant">Available for system architecture</span>
+                </div>
+                <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter leading-[1.1] mb-6">
+                    Engineering <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">Digital Resiliency</span> Through Code.
+                </h1>
+                <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed font-light">
+                    Senior IT Architect specializing in scalable cloud infrastructure and high-performance full-stack applications. I bridge the gap between complex technical requirements and elegant, maintainable solutions.
+                </p>
+                <div class="flex flex-wrap gap-4 items-center">
+                    <a class="group relative flex items-center gap-3 bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-8 py-4 rounded-md font-bold transition-all hover:translate-y-[-2px] overflow-hidden" href="https://github.com">
+                        <span class="material-symbols-outlined">terminal</span>
+                        <span>Explore Repository</span>
+                    </a>
+                    <a class="flex items-center gap-2 text-primary border border-primary/20 hover:bg-primary/5 px-8 py-4 rounded-md font-bold transition-all" href="projects.html">
+                        <span>View Case Studies</span>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="mt-16 grid grid-cols-3 gap-8 max-w-md">
+                    <div>
+                        <div class="text-xs font-mono text-tertiary uppercase tracking-widest mb-1">Experience</div>
+                        <div class="text-2xl font-headline font-bold">12+ Yrs</div>
+                    </div>
+                    <div>
+                        <div class="text-xs font-mono text-tertiary uppercase tracking-widest mb-1">Deployments</div>
+                        <div class="text-2xl font-headline font-bold">450+</div>
+                    </div>
+                    <div>
+                        <div class="text-xs font-mono text-tertiary uppercase tracking-widest mb-1">Uptime</div>
+                        <div class="text-2xl font-headline font-bold">99.9%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-5 relative">
+                <div class="relative aspect-square md:aspect-auto md:h-[600px] w-full bg-surface-container-low rounded-xl overflow-hidden shadow-2xl group">
+                    <img class="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop" alt="Code Background"/>
+                    <div class="absolute bottom-6 left-6 right-6 glass-panel p-6 rounded-lg border border-white/5 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined">developer_board</span>
+                            </div>
+                            <div>
+                                <div class="font-headline font-bold">Current Stack</div>
+                                <div class="text-xs font-mono text-primary">System Integrity: Optimal</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-surface-variant text-[10px] font-mono rounded">Kubernetes</span>
+                            <span class="px-2 py-1 bg-surface-variant text-[10px] font-mono rounded">TypeScript</span>
+                            <span class="px-2 py-1 bg-surface-variant text-[10px] font-mono rounded">Rust</span>
+                            <span class="px-2 py-1 bg-surface-variant text-[10px] font-mono rounded">AWS/GCP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="font-headline text-3xl font-bold mb-4">Architectural Focus</h2>
+                <div class="h-1 w-20 bg-primary"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="md:col-span-2 p-8 bg-surface-container rounded-xl flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+                    <div>
+                        <span class="material-symbols-outlined text-primary mb-6 text-4xl">cloud_done</span>
+                        <h3 class="font-headline text-2xl font-bold mb-4">Cloud Native Infrastructure</h3>
+                        <p class="text-on-surface-variant leading-relaxed max-w-xl">Designing fault-tolerant microservices architectures using Kubernetes and Terraform.</p>
+                    </div>
+                </div>
+                <div class="p-8 bg-surface-container rounded-xl hover:bg-surface-container-high transition-colors border-t-2 border-primary/20">
+                    <span class="material-symbols-outlined text-primary mb-6 text-4xl">security</span>
+                    <h3 class="font-headline text-2xl font-bold mb-4">SecOps</h3>
+                    <p class="text-on-surface-variant leading-relaxed">Implementing end-to-end security protocols for enterprise-grade applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
-<!-- Footer -->
-<footer class="bg-slate-900 tonal-shift bg-slate-950 w-full py-12 px-6">
-<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto font-['Inter'] text-sm tracking-wide">
-<div class="text-lg font-mono text-cyan-500">
-                DigitalArchitect
-            </div>
-<div class="text-slate-500">
-                © 2024 Digital Architect. Built with Monospaced Precision.
-            </div>
-<div class="flex gap-8">
-<a class="text-slate-500 hover:text-slate-200 transition-colors opacity-80 hover:opacity-100" href="#">GitHub</a>
-<a class="text-slate-500 hover:text-slate-200 transition-colors opacity-80 hover:opacity-100" href="#">LinkedIn</a>
-<a class="text-slate-500 hover:text-slate-200 transition-colors opacity-80 hover:opacity-100" href="#">Documentation</a>
-<a class="text-slate-500 hover:text-slate-200 transition-colors opacity-80 hover:opacity-100" href="#">Privacy</a>
-</div>
-</div>
+
+<footer class="bg-slate-950 w-full py-12 px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto font-['Inter'] text-sm tracking-wide">
+        <div class="text-lg font-mono text-cyan-500">
+            DigitalArchitect
+        </div>
+        <div class="text-slate-500">
+            © 2024 Digital Architect. Built with Monospaced Precision.
+        </div>
+        <div class="flex gap-8">
+            <a class="text-slate-500 hover:text-slate-200 transition-colors" href="https://github.com">GitHub</a>
+            <a class="text-slate-500 hover:text-slate-200 transition-colors" href="https://linkedin.com">LinkedIn</a>
+            <a class="text-slate-500 hover:text-slate-200 transition-colors" href="contact.html">Contact</a>
+        </div>
+    </div>
 </footer>
-</body></html>
+</body>
+      </html>
+      
